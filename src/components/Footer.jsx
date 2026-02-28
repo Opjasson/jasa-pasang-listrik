@@ -8,7 +8,7 @@ function Footer() {
           <div>
             <div className="mb-4 flex items-center gap-3">
               <img src={logo} alt="Electrical Service Solutions logo" className="h-12 w-12 object-contain" />
-              <span className="font-display text-xl font-bold text-white">
+              <span className="font-display text-lg font-bold text-white sm:text-xl">
                 Electrical Service Solutions
               </span>
             </div>
@@ -45,7 +45,7 @@ function Footer() {
               <li>+62 857-1225-5508 (Agus Herianto)</li>
               <li>+62 822-5866-1995 (Fahri Septa M)</li>
               <li>info@electricalservicesolutions.com</li>
-              <li>Tembok Luwung RT. 041 RW. 009 Desa Tembok Luwung Kec. Adiwerna Kab. Tegal 52194</li>
+              <li className="break-words">Tembok Luwung RT. 041 RW. 009 Desa Tembok Luwung Kec. Adiwerna Kab. Tegal 52194</li>
             </ul>
           </div>
         </div>
@@ -59,3 +59,4 @@ function Footer() {
 }
 
 export default Footer
+

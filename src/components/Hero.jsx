@@ -24,7 +24,7 @@ function Hero() {
         ></div>
       </div>
 
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 hidden opacity-10 sm:block">
         <div className="absolute bottom-0 top-0 left-1/4 w-px bg-gradient-to-b from-transparent via-electric-500/50 to-transparent"></div>
         <div className="absolute bottom-0 top-0 left-2/4 w-px bg-gradient-to-b from-transparent via-electric-500/50 to-transparent"></div>
         <div className="absolute bottom-0 top-0 left-3/4 w-px bg-gradient-to-b from-transparent via-electric-500/50 to-transparent"></div>
@@ -54,7 +54,7 @@ function Hero() {
         }}
       ></div>
 
-      <div className="relative mx-auto max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 pb-6 pt-24 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-slide-up">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
@@ -64,29 +64,29 @@ function Hero() {
               </span>
             </div>
 
-            <h1 className="mb-6 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mb-6 font-display text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl">
               Solusi Lengkap <span className="gradient-text">Instalasi Listrik</span>{' '}
               Profesional
             </h1>
 
-            <p className="mb-8 max-w-xl text-lg text-gray-400">
+            <p className="mb-8 max-w-xl text-base text-gray-400 sm:text-lg">
               Layanan instalasi listrik residensial dan komersial dengan standar
               keamanan tinggi. Tim berpengalaman siap melayani pemasangan baru,
               perbaikan, dan upgrade daya.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href="https://wa.me/6285712255508"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-electric inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-electric-500 to-electric-400 px-8 py-4 text-lg font-semibold text-dark-900 transition-all hover:shadow-xl hover:shadow-electric-500/30"
+                className="btn-electric inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-electric-500 to-electric-400 px-6 py-3 text-base font-semibold text-dark-900 transition-all hover:shadow-xl hover:shadow-electric-500/30 sm:px-8 sm:py-4 sm:text-lg"
               >
                 Konsultasi Gratis
               </a>
               <a
                 href="tel:+6285712255508"
-                className="inline-flex items-center gap-2 rounded-xl border border-gray-600 px-8 py-4 text-lg font-semibold text-white transition-all hover:border-electric-500/50 hover:bg-electric-500/5"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-600 px-6 py-3 text-base font-semibold text-white transition-all hover:border-electric-500/50 hover:bg-electric-500/5 sm:px-8 sm:py-4 sm:text-lg"
               >
                 Telepon Sekarang
               </a>
@@ -94,25 +94,25 @@ function Hero() {
           </div>
 
           <div className="animate-fade-in relative" style={{ animationDelay: '0.3s' }}>
-            <div className="relative rounded-3xl border border-dark-600 bg-gradient-to-br from-dark-700 to-dark-800 p-8">
+            <div className="relative rounded-3xl border border-dark-600 bg-gradient-to-br from-dark-700 to-dark-800 p-5 sm:p-8">
               <div className="absolute -right-4 -top-4 h-24 w-24 rounded-2xl bg-electric-500/20 blur-xl"></div>
 
               <div className="relative grid grid-cols-2 gap-4">
-                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-6">
-                  <div className="mb-1 font-display text-2xl font-bold text-white">900 VA</div>
+                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-4 sm:p-6">
+                  <div className="mb-1 font-display text-xl font-bold text-white sm:text-2xl">900 VA</div>
                   <div className="text-sm text-gray-500">Daya Minimum</div>
                 </div>
-                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-6">
-                  <div className="mb-1 font-display text-2xl font-bold text-white">
+                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-4 sm:p-6">
+                  <div className="mb-1 font-display text-xl font-bold text-white sm:text-2xl">
                     192 KVA
                   </div>
                   <div className="text-sm text-gray-500">Daya Maksimum</div>
                 </div>
-                <div className="col-span-2 rounded-2xl border border-electric-500/20 bg-gradient-to-r from-electric-500/10 to-electric-400/10 p-6">
+                <div className="col-span-2 rounded-2xl border border-electric-500/20 bg-gradient-to-r from-electric-500/10 to-electric-400/10 p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="mb-1 text-sm text-gray-400">Garansi Pekerjaan</div>
-                      <div className="gradient-text font-display text-3xl font-bold">100%</div>
+                      <div className="gradient-text font-display text-2xl font-bold sm:text-3xl">100%</div>
                     </div>
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-electric-500/20">
                       <svg
@@ -136,11 +136,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:mt-20 sm:gap-6 md:grid-cols-4">
           {featuresData.map((feature) => (
             <div
               key={feature.label}
-              className="rounded-2xl border border-dark-600 bg-dark-800/50 p-6 text-center"
+              className="rounded-2xl border border-dark-600 bg-dark-800/50 p-4 text-center sm:p-6"
             >
               <div className="gradient-text mb-2 font-display text-3xl font-bold sm:text-4xl">
                 {feature.number}
@@ -155,3 +155,4 @@ function Hero() {
 }
 
 export default Hero
+

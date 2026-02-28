@@ -43,7 +43,7 @@ function ServiceArea() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-electric-500/60 bg-white p-5 lg:col-span-4 lg:h-[460px]">
+          <div className="rounded-3xl border border-electric-500/60 bg-white p-4 sm:p-5 lg:col-span-4 lg:h-[460px]">
             <div className="flex h-full flex-col">
               <h3 className="mb-1 font-display text-xl font-bold text-dark-900">Kota Tercover</h3>
               <p className="mb-4 text-sm text-dark-700/80">
@@ -85,4 +85,5 @@ function ServiceArea() {
 }
 
 export default ServiceArea
+
 

@@ -17,16 +17,16 @@ function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
               </div>
               <div className="grid grid-cols-3 border-t border-dark-600">
-                <div className="border-r border-dark-600 p-6 text-center">
-                  <div className="font-display text-2xl font-bold text-electric-400">500+</div>
+                <div className="border-r border-dark-600 p-4 text-center sm:p-6">
+                  <div className="font-display text-xl font-bold text-electric-400 sm:text-2xl">500+</div>
                   <div className="text-sm text-gray-500">Proyek</div>
                 </div>
-                <div className="border-r border-dark-600 p-6 text-center">
-                  <div className="font-display text-2xl font-bold text-electric-400">50+</div>
+                <div className="border-r border-dark-600 p-4 text-center sm:p-6">
+                  <div className="font-display text-xl font-bold text-electric-400 sm:text-2xl">50+</div>
                   <div className="text-sm text-gray-500">Tim Ahli</div>
                 </div>
-                <div className="p-6 text-center">
-                  <div className="font-display text-2xl font-bold text-electric-400">24/7</div>
+                <div className="p-4 text-center sm:p-6">
+                  <div className="font-display text-xl font-bold text-electric-400 sm:text-2xl">24/7</div>
                   <div className="text-sm text-gray-500">Support</div>
                 </div>
               </div>
@@ -40,7 +40,7 @@ function About() {
             <h2 className="mb-6 font-display text-3xl font-bold text-white sm:text-4xl">
               Mitra Terpercaya untuk <span className="gradient-text">Kelistrikan</span> Anda
             </h2>
-            <p className="mb-6 leading-relaxed text-gray-400">
+            <p className="mb-6 text-sm leading-relaxed text-gray-400 sm:text-base">
               Electrical Service Solutions adalah penyedia layanan instalasi listrik profesional dengan
               pengalaman lebih dari 15 tahun. Kami berkomitmen memberikan solusi
               kelistrikan yang aman, efisien, dan sesuai standar SPLN.
@@ -68,7 +68,7 @@ function About() {
                       />
                     </svg>
                   </div>
-                  <span className="text-gray-300">{item}</span>
+                  <span className="text-sm text-gray-300 sm:text-base">{item}</span>
                 </div>
               ))}
             </div>
@@ -86,3 +86,4 @@ function About() {
 }
 
 export default About
+

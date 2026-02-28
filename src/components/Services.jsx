@@ -44,8 +44,8 @@ function ServiceCard({ service, index }) {
           </svg>
         </div>
       </div>
-      <div className="p-6">
-        <h3 className="mb-3 font-display text-xl font-semibold text-white">{service.title}</h3>
+      <div className="p-5 sm:p-6">
+        <h3 className="mb-3 font-display text-lg font-semibold text-white sm:text-xl">{service.title}</h3>
         <p className="text-sm leading-relaxed text-gray-400">{service.desc}</p>
       </div>
     </div>
@@ -72,10 +72,10 @@ function Services() {
           </p>
         </div>
 
-        <div className="mb-12 flex justify-center gap-4">
+        <div className="mb-10 flex flex-col justify-center gap-3 sm:mb-12 sm:flex-row sm:gap-4">
           <button
             onClick={() => setActiveTab('teknis')}
-            className={`rounded-xl px-6 py-3 font-semibold transition-all ${
+            className={`rounded-xl px-5 py-3 text-sm font-semibold transition-all sm:px-6 sm:text-base ${
               activeTab === 'teknis'
                 ? 'bg-electric-500 text-dark-900'
                 : 'bg-dark-700 text-gray-300 hover:bg-dark-600'
@@ -85,7 +85,7 @@ function Services() {
           </button>
           <button
             onClick={() => setActiveTab('pln')}
-            className={`rounded-xl px-6 py-3 font-semibold transition-all ${
+            className={`rounded-xl px-5 py-3 text-sm font-semibold transition-all sm:px-6 sm:text-base ${
               activeTab === 'pln'
                 ? 'bg-electric-500 text-dark-900'
                 : 'bg-dark-700 text-gray-300 hover:bg-dark-600'
@@ -114,3 +114,4 @@ function Services() {
 }
 
 export default Services
+

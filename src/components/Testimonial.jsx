@@ -263,8 +263,8 @@ function Testimonial() {
                 onClick={() => goToIndex(item.idx)}
                 className={`h-full text-left transition-all duration-700 focus:outline-none focus:ring-2 focus:ring-electric-400/70 ${
                   isCenter
-                    ? 'scale-100 opacity-100 md:-translate-y-2'
-                    : 'scale-95 opacity-85 hover:opacity-100'
+                    ? 'block scale-100 opacity-100 md:-translate-y-2'
+                    : 'hidden scale-95 opacity-85 hover:opacity-100 md:block'
                 }`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.2, 0.8, 0.2, 1)',
@@ -297,7 +297,7 @@ function Testimonial() {
                     </div>
                   </div>
 
-                  <div className={`${isCenter ? 'p-6' : 'p-5'}`}>
+                  <div className={`${isCenter ? 'p-5 sm:p-6' : 'p-4 sm:p-5'}`}>
                     <div className="mb-4 flex items-center gap-1" aria-label={`Rating ${item.rating} dari 5`}>
                       {[1, 2, 3, 4, 5].map((star) => (
                         <StarIcon key={`${item.name}-star-${star}`} active={star <= item.rating} />
@@ -346,3 +346,5 @@ function Testimonial() {
 }
 
 export default Testimonial
+
+

@@ -55,8 +55,8 @@ function WhyChooseUs() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[2rem] border border-electric-500/45 bg-white p-6 sm:p-8 lg:p-10">
-          <div className="mb-14 text-center">
+        <div className="rounded-[2rem] border border-electric-500/45 bg-white p-5 sm:p-8 lg:p-10">
+          <div className="mb-10 text-center sm:mb-14">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/40 bg-electric-400/10 px-4 py-2">
               <span className="text-sm font-medium text-electric-700">Keunggulan Kami</span>
             </div>
@@ -72,7 +72,7 @@ function WhyChooseUs() {
             {reasons.map((item) => (
               <article
                 key={item.title}
-                className="rounded-3xl border border-electric-500/45 bg-white p-5 transition-all hover:-translate-y-1 hover:shadow-[0_20px_45px_-30px_rgba(251,191,36,0.9)]"
+                className="rounded-3xl border border-electric-500/45 bg-white p-4 transition-all hover:-translate-y-1 hover:shadow-[0_20px_45px_-30px_rgba(251,191,36,0.9)] sm:p-5"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-electric-500/40 bg-electric-400/15 text-electric-700">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,3 +99,4 @@ function WhyChooseUs() {
 }
 
 export default WhyChooseUs
+

@@ -44,7 +44,7 @@ function Contact() {
 
         <div className="grid gap-8 lg:grid-cols-5">
           <div className="space-y-6 lg:col-span-2">
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-6">
+            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">Telepon</h4>
               <p className="mb-2 text-sm text-gray-400">Tersedia 24 Jam</p>
               <div className="space-y-1">
@@ -62,7 +62,7 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-6">
+            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">WhatsApp</h4>
               <p className="mb-2 text-sm text-gray-400">Chat langsung</p>
               <a
@@ -74,9 +74,9 @@ function Contact() {
                 Kirim Pesan
               </a>
             </div>
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-6">
+            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">Alamat</h4>
-              <p className="text-sm text-gray-400">
+              <p className="break-words text-sm text-gray-400">
                 Tembok Luwung RT. 041 RW. 009 Desa Tembok Luwung Kec. Adiwerna
                 Kab. Tegal 52194
               </p>
@@ -94,7 +94,7 @@ function Contact() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-dark-600 bg-dark-800/50 p-8"
+              className="rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-8"
             >
               <div className="space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
@@ -151,7 +151,7 @@ function Contact() {
 
                 <button
                   type="submit"
-                  className="btn-electric w-full rounded-xl bg-gradient-to-r from-electric-500 to-electric-400 py-4 text-lg font-semibold text-dark-900 transition-all hover:shadow-lg hover:shadow-electric-500/25"
+                  className="btn-electric w-full rounded-xl bg-gradient-to-r from-electric-500 to-electric-400 py-3 text-base font-semibold text-dark-900 transition-all hover:shadow-lg hover:shadow-electric-500/25 sm:py-4 sm:text-lg"
                 >
                   Kirim ke WhatsApp
                 </button>
@@ -165,3 +165,4 @@ function Contact() {
 }
 
 export default Contact
+

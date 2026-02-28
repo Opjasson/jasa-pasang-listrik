@@ -63,9 +63,9 @@ function Faq() {
                 <button
                   type="button"
                   onClick={() => toggleItem(index)}
-                  className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                  className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:gap-4 sm:px-6 sm:py-5"
                 >
-                  <span className="font-display text-lg font-semibold text-white">
+                  <span className="font-display text-base font-semibold text-white sm:text-lg">
                     {item.question}
                   </span>
                   <span
@@ -82,7 +82,7 @@ function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="border-t border-dark-600 px-6 py-5 leading-relaxed text-gray-300">
+                    <p className="border-t border-dark-600 px-4 py-4 text-sm leading-relaxed text-gray-300 sm:px-6 sm:py-5 sm:text-base">
                       {item.answer}
                     </p>
                   </div>
@@ -97,3 +97,4 @@ function Faq() {
 }
 
 export default Faq
+
