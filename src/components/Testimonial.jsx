@@ -223,32 +223,32 @@ function Testimonial() {
       >
         <div className="mb-14 text-center">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/40 bg-white px-4 py-2">
-            <span className="text-sm font-medium text-electric-400">Testimoni Klien</span>
+            <span className="text-sm font-semibold text-black">Testimoni Klien</span>
           </div>
           <h2 className="mb-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Kepercayaan dari <span className="gradient-text">Pelanggan Kami</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-gray-400">
+          <p className="mx-auto max-w-2xl text-gray-300">
             Ulasan pelanggan dari dokumentasi chat dan hasil pekerjaan di lapangan.
           </p>
         </div>
 
-        <div className="mb-6 grid grid-cols-2 gap-3 rounded-2xl border border-electric-500/40 bg-white p-4 text-center sm:grid-cols-4 sm:p-5">
+        <div className="mb-6 grid grid-cols-2 gap-3 rounded-2xl border border-electric-500/40 bg-white/95 p-4 text-center sm:grid-cols-4 sm:p-5">
           <div>
             <p className="text-xl font-bold text-dark-900 sm:text-2xl">200+</p>
-            <p className="text-xs text-dark-700/80 sm:text-sm">Proyek Selesai</p>
+            <p className="text-xs text-black/80 sm:text-sm">Proyek Selesai</p>
           </div>
           <div>
             <p className="text-xl font-bold text-dark-900 sm:text-2xl">4.9/5</p>
-            <p className="text-xs text-dark-700/80 sm:text-sm">Rata-rata Rating</p>
+            <p className="text-xs text-black/80 sm:text-sm">Rata-rata Rating</p>
           </div>
           <div>
             <p className="text-xl font-bold text-dark-900 sm:text-2xl">24 Jam</p>
-            <p className="text-xs text-dark-700/80 sm:text-sm">Respon Cepat</p>
+            <p className="text-xs text-black/80 sm:text-sm">Respon Cepat</p>
           </div>
           <div>
             <p className="text-xl font-bold text-dark-900 sm:text-2xl">100%</p>
-            <p className="text-xs text-dark-700/80 sm:text-sm">Transparan Biaya</p>
+            <p className="text-xs text-black/80 sm:text-sm">Transparan Biaya</p>
           </div>
         </div>
 
@@ -264,7 +264,7 @@ function Testimonial() {
                 className={`h-full text-left transition-all duration-700 focus:outline-none focus:ring-2 focus:ring-electric-400/70 ${
                   isCenter
                     ? 'block scale-100 opacity-100 md:-translate-y-2'
-                    : 'hidden scale-95 opacity-85 hover:opacity-100 md:block'
+                    : 'hidden scale-95 opacity-95 hover:opacity-100 md:block'
                 }`}
                 style={{
                   transitionTimingFunction: 'cubic-bezier(0.2, 0.8, 0.2, 1)',
@@ -289,10 +289,10 @@ function Testimonial() {
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-                    <div className="absolute left-4 top-4 rounded-full border border-electric-500/50 bg-white/95 px-3 py-1 text-xs font-semibold text-electric-700">
+                    <div className="absolute left-4 top-4 rounded-full border border-electric-500/50 bg-white/95 px-3 py-1 text-xs font-semibold text-black">
                       {item.type}
                     </div>
-                    <div className="absolute right-4 top-4 rounded-full border border-electric-500/40 bg-white/95 p-2 text-electric-700">
+                    <div className="absolute right-4 top-4 rounded-full border border-electric-500/50 bg-white p-2 text-black">
                       <QuoteIcon />
                     </div>
                   </div>
@@ -305,7 +305,7 @@ function Testimonial() {
                     </div>
 
                     <p
-                      className={`${isCenter ? 'text-base' : 'text-sm'} mb-5 leading-relaxed text-dark-700`}
+                      className={`${isCenter ? 'text-base' : 'text-sm'} mb-5 leading-relaxed text-dark-800`}
                     >
                       "{item.quote}"
                     </p>
@@ -313,7 +313,7 @@ function Testimonial() {
                     <h3 className={`${isCenter ? 'text-xl' : 'text-lg'} font-display font-bold text-dark-900`}>
                       {item.name}
                     </h3>
-                    <p className="mt-1 text-xs text-dark-700/80">
+                    <p className="mt-1 text-xs text-dark-800/85">
                       {item.location} | {item.service}
                     </p>
                   </div>
@@ -346,5 +346,7 @@ function Testimonial() {
 }
 
 export default Testimonial
+
+
 
 
