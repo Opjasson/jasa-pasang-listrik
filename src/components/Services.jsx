@@ -5,6 +5,9 @@ function ServiceCard({ service, index }) {
   const [isVisible, setIsVisible] = useState(false)
   const cardRef = useRef(null)
 
+  const waMessage = `Halo Pak Agus Herianto, saya ingin konsultasi layanan ${service.title}.`
+  const waUrl = `https://wa.me/6285712255508?text=${encodeURIComponent(waMessage)}`
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -46,7 +49,15 @@ function ServiceCard({ service, index }) {
       </div>
       <div className="p-5 sm:p-6">
         <h3 className="mb-3 font-display text-lg font-semibold text-white sm:text-xl">{service.title}</h3>
-        <p className="text-sm leading-relaxed text-gray-400">{service.desc}</p>
+        <p className="mb-5 text-sm leading-relaxed text-gray-400">{service.desc}</p>
+        <a
+          href={waUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex w-full items-center justify-center rounded-xl border border-electric-400 bg-electric-500 px-4 py-2.5 text-sm font-semibold text-dark-900 transition-all hover:border-electric-500/40 hover:bg-electric-500/10 hover:text-electric-300"
+        >
+          Hubungi Kami
+        </a>
       </div>
     </div>
   )
