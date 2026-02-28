@@ -59,7 +59,13 @@ function Navigation({ theme, onToggleTheme }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Electrical Service Solutions logo" className="h-12 w-12 object-contain" />
+            <div
+              className={`flex h-12 w-12 items-center justify-center rounded-2xl transition-colors ${
+                theme === 'dark' ? 'bg-white/95' : 'bg-transparent'
+              }`}
+            >
+              <img src={logo} alt="Electrical Service Solutions logo" className="h-10 w-10 object-contain" />
+            </div>
             <span className="hidden font-display text-xl font-bold text-white sm:block">
               Electrical Service Solutions
             </span>
@@ -162,3 +168,4 @@ function Navigation({ theme, onToggleTheme }) {
 }
 
 export default Navigation
+
