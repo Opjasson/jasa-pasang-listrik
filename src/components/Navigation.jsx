@@ -31,6 +31,17 @@ function Navigation({ theme, onToggleTheme }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
+  const navItems = [
+    { label: 'Beranda', href: '#beranda' },
+    { label: 'Layanan', href: '#layanan' },
+    { label: 'Tentang', href: '#tentang' },
+    { label: 'Kenapa Pilih Kami?', href: '#kenapa-pilih-kami' },
+    { label: 'Testimoni', href: '#testimoni' },
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Area Layanan', href: '#area-layanan' },
+    { label: 'Kontak', href: '#kontak' },
+  ]
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
@@ -49,22 +60,14 @@ function Navigation({ theme, onToggleTheme }) {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Electrical Service Solutions logo" className="h-12 w-12 object-contain" />
-            <span className="font-display text-xl font-bold text-white">
+            <span className="hidden font-display text-xl font-bold text-white sm:block">
               Electrical Service Solutions
             </span>
+            <span className="font-display text-lg font-bold text-white sm:hidden">ESS</span>
           </div>
 
           <div className="hidden items-center gap-6 2xl:flex">
-            {[
-              { label: 'Beranda', href: '#beranda' },
-              { label: 'Layanan', href: '#layanan' },
-              { label: 'Tentang', href: '#tentang' },
-              { label: 'Kenapa Pilih Kami?', href: '#kenapa-pilih-kami' },
-              { label: 'Testimoni', href: '#testimoni' },
-              { label: 'FAQ', href: '#faq' },
-              { label: 'Area Layanan', href: '#area-layanan' },
-              { label: 'Kontak', href: '#kontak' },
-            ].map((item) => (
+            {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
@@ -105,6 +108,7 @@ function Navigation({ theme, onToggleTheme }) {
               onClick={() => setMobileOpen((prev) => !prev)}
               className="p-2 text-white"
               aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
             >
               <svg
                 className="h-6 w-6"
@@ -135,28 +139,19 @@ function Navigation({ theme, onToggleTheme }) {
 
       <div
         className={`overflow-hidden transition-all duration-300 2xl:hidden ${
-          mobileOpen ? 'max-h-96' : 'max-h-0'
+          mobileOpen ? 'max-h-[28rem]' : 'max-h-0'
         }`}
       >
         <div className="bg-dark-800 px-4 py-4">
-          <div className="grid grid-cols-4 gap-2">
-            {[
-              { label: 'Beranda', href: '#beranda' },
-              { label: 'Layanan', href: '#layanan' },
-              { label: 'Tentang', href: '#tentang' },
-              { label: 'Keunggulan Kami', href: '#kenapa-pilih-kami' },
-              { label: 'Testimoni', href: '#testimoni' },
-              { label: 'FAQ', href: '#faq' },
-              { label: 'Area Layanan', href: '#area-layanan' },
-              { label: 'Hubungi Kami', href: '#kontak' },
-            ].map((item) => (
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+            {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-lg border border-dark-600 px-2 py-2.5 text-center text-xs text-gray-300 transition-colors hover:border-electric-500/40 hover:text-electric-400 sm:px-3 sm:text-sm"
+                className="rounded-lg border border-dark-600 px-3 py-3 text-center text-sm text-gray-300 transition-colors hover:border-electric-500/40 hover:text-electric-400"
               >
-                {item.label}
+                {item.label === 'Kenapa Pilih Kami?' ? 'Keunggulan Kami' : item.label}
               </a>
             ))}
           </div>
