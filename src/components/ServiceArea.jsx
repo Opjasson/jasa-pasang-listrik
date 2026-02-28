@@ -60,7 +60,7 @@ function ServiceArea() {
                     className="group flex items-center justify-between rounded-xl border border-electric-500/45 bg-white px-3 py-3 transition-all hover:-translate-y-0.5 hover:border-electric-500 hover:bg-electric-400"
                   >
                     <div className="flex min-w-0 items-center gap-3">
-                      <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-electric-500/50 bg-electric-400/20 text-xs font-semibold text-electric-700 group-hover:border-electric-700 group-hover:bg-white/70">
+                      <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-electric-500/50 bg-electric-400/20 text-xs font-semibold text-black group-hover:border-electric-700 group-hover:bg-white/70">
                         {index + 1}
                       </div>
                       <div className="min-w-0">
@@ -70,7 +70,7 @@ function ServiceArea() {
                         </p>
                       </div>
                     </div>
-                    <span className="rounded-md border border-electric-500/50 bg-white/80 px-2 py-1 text-[11px] text-electric-700 transition-colors group-hover:border-electric-700 group-hover:bg-dark-900 group-hover:text-white">
+                    <span className="rounded-md border border-electric-500/50 bg-white/80 px-2 py-1 text-[11px] text-black transition-colors group-hover:border-electric-700 group-hover:bg-white group-hover:text-black">
                       Buka
                     </span>
                   </a>
@@ -85,5 +85,6 @@ function ServiceArea() {
 }
 
 export default ServiceArea
+
 
 
