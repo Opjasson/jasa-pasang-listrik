@@ -30,7 +30,7 @@ function Contact() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
             <span className="text-sm font-medium text-electric-400">Hubungi Kami</span>
           </div>
           <h2 className="mb-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -44,7 +44,7 @@ function Contact() {
 
         <div className="grid gap-8 lg:grid-cols-5">
           <div className="space-y-6 lg:col-span-2">
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
+            <div className="card-hover rounded-2xl border border-electric-500/35 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">Telepon</h4>
               <p className="mb-2 text-sm text-gray-400">Tersedia 24 Jam</p>
               <div className="space-y-1">
@@ -62,7 +62,7 @@ function Contact() {
                 </a>
               </div>
             </div>
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
+            <div className="card-hover rounded-2xl border border-electric-500/35 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">WhatsApp</h4>
               <p className="mb-2 text-sm text-gray-400">Chat langsung</p>
               <a
@@ -74,7 +74,7 @@ function Contact() {
                 Kirim Pesan
               </a>
             </div>
-            <div className="card-hover rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-6">
+            <div className="card-hover rounded-2xl border border-electric-500/35 bg-dark-800/50 p-5 sm:p-6">
               <h4 className="mb-1 font-semibold text-white">Alamat</h4>
               <p className="break-words text-sm text-gray-400">
                 Tembok Luwung RT. 041 RW. 009 Desa Tembok Luwung Kec. Adiwerna
@@ -94,7 +94,7 @@ function Contact() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-dark-600 bg-dark-800/50 p-5 sm:p-8"
+              className="rounded-2xl border border-electric-500/40 bg-dark-800/50 p-5 sm:p-8"
             >
               <div className="space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
@@ -103,7 +103,7 @@ function Contact() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full rounded-xl border border-dark-600 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-500 focus:outline-none"
+                    className="w-full rounded-xl border border-electric-500/35 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-400 focus:outline-none"
                     placeholder="Nama lengkap"
                   />
                   <input
@@ -111,7 +111,7 @@ function Contact() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full rounded-xl border border-dark-600 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-500 focus:outline-none"
+                    className="w-full rounded-xl border border-electric-500/35 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-400 focus:outline-none"
                     placeholder="08xxxxxxxxxx"
                   />
                 </div>
@@ -120,7 +120,7 @@ function Contact() {
                   required
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                  className="w-full rounded-xl border border-dark-600 bg-dark-900/50 px-4 py-3 text-white focus:border-electric-500 focus:outline-none"
+                  className="w-full rounded-xl border border-electric-500/35 bg-dark-900/50 px-4 py-3 text-white focus:border-electric-400 focus:outline-none"
                 >
                   <option value="">Pilih layanan</option>
                   <option value="instalasi-baru">Instalasi Listrik Rumah Baru</option>
@@ -145,7 +145,7 @@ function Contact() {
                   rows="4"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full resize-none rounded-xl border border-dark-600 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-500 focus:outline-none"
+                  className="w-full resize-none rounded-xl border border-electric-500/35 bg-dark-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-electric-400 focus:outline-none"
                   placeholder="Jelaskan kebutuhan Anda..."
                 ></textarea>
 
@@ -165,4 +165,5 @@ function Contact() {
 }
 
 export default Contact
+
 

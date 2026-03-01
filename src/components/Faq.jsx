@@ -41,7 +41,7 @@ function Faq() {
 
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
             <span className="text-sm font-medium text-electric-400">FAQ</span>
           </div>
           <h2 className="mb-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -58,7 +58,7 @@ function Faq() {
             return (
               <div
                 key={item.question}
-                className="overflow-hidden rounded-2xl border border-dark-600 bg-dark-800/50"
+                className="overflow-hidden rounded-2xl border border-electric-500/35 bg-dark-800/50"
               >
                 <button
                   type="button"
@@ -69,7 +69,7 @@ function Faq() {
                     {item.question}
                   </span>
                   <span
-                    className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-electric-500/30 bg-electric-500/10 text-electric-400 transition-transform ${
+                    className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-electric-500/55 bg-electric-500/20 text-electric-400 transition-transform ${
                       isOpen ? 'rotate-45' : 'rotate-0'
                     }`}
                   >
@@ -82,7 +82,7 @@ function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="border-t border-dark-600 px-4 py-4 text-sm leading-relaxed text-gray-300 sm:px-6 sm:py-5 sm:text-base">
+                    <p className="border-t border-electric-500/35 px-4 py-4 text-sm leading-relaxed text-gray-300 sm:px-6 sm:py-5 sm:text-base">
                       {item.answer}
                     </p>
                   </div>
@@ -97,4 +97,5 @@ function Faq() {
 }
 
 export default Faq
+
 

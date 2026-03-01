@@ -57,7 +57,7 @@ function Hero() {
       <div className="relative mx-auto max-w-7xl px-4 pb-6 pt-24 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-slide-up">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
               <span className="h-2 w-2 animate-pulse rounded-full bg-electric-400"></span>
               <span className="text-sm font-medium text-electric-400">
                 Tersedia 24 Jam
@@ -94,21 +94,21 @@ function Hero() {
           </div>
 
           <div className="animate-fade-in relative" style={{ animationDelay: '0.3s' }}>
-            <div className="relative rounded-3xl border border-dark-600 bg-gradient-to-br from-dark-700 to-dark-800 p-5 sm:p-8">
+            <div className="relative rounded-3xl border border-electric-500/35 bg-gradient-to-br from-dark-700 to-dark-800 p-5 sm:p-8">
               <div className="absolute -right-4 -top-4 h-24 w-24 rounded-2xl bg-electric-500/20 blur-xl"></div>
 
               <div className="relative grid grid-cols-2 gap-4">
-                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-4 sm:p-6">
+                <div className="rounded-2xl border border-electric-500/35 bg-dark-900/50 p-4 sm:p-6">
                   <div className="mb-1 font-display text-xl font-bold text-white sm:text-2xl">900 VA</div>
                   <div className="text-sm text-gray-500">Daya Minimum</div>
                 </div>
-                <div className="rounded-2xl border border-dark-600 bg-dark-900/50 p-4 sm:p-6">
+                <div className="rounded-2xl border border-electric-500/35 bg-dark-900/50 p-4 sm:p-6">
                   <div className="mb-1 font-display text-xl font-bold text-white sm:text-2xl">
                     192 KVA
                   </div>
                   <div className="text-sm text-gray-500">Daya Maksimum</div>
                 </div>
-                <div className="col-span-2 rounded-2xl border border-electric-500/20 bg-gradient-to-r from-electric-500/10 to-electric-400/10 p-4 sm:p-6">
+                <div className="col-span-2 rounded-2xl border border-electric-500/45 bg-gradient-to-r from-electric-500/15 to-electric-400/15 p-4 sm:p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="mb-1 text-sm text-gray-400">Garansi Pekerjaan</div>
@@ -155,4 +155,5 @@ function Hero() {
 }
 
 export default Hero
+
 

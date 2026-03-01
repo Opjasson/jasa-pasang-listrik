@@ -23,7 +23,7 @@ function ServiceCard({ service, index }) {
   return (
     <div
       ref={cardRef}
-      className={`card-hover overflow-hidden rounded-2xl border border-dark-600 bg-dark-800/50 transition-all duration-500 hover:border-electric-500/30 ${
+      className={`card-hover overflow-hidden rounded-2xl border border-electric-500/35 bg-dark-800/50 transition-all duration-500 hover:border-electric-500/60 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
       }`}
       style={{ transitionDelay: `${index * 100}ms` }}
@@ -72,7 +72,7 @@ function Services() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
             <span className="text-sm font-medium text-electric-400">Layanan Kami</span>
           </div>
           <h2 className="mb-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -125,4 +125,5 @@ function Services() {
 }
 
 export default Services
+
 

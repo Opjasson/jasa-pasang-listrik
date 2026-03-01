@@ -2,7 +2,7 @@ import logo from '../assets/logo.png'
 
 function Footer() {
   return (
-    <footer className="border-t border-dark-700 py-12">
+    <footer className="border-t border-electric-500/35 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 grid gap-8 md:grid-cols-3">
           <div>
@@ -50,7 +50,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-dark-700 pt-8 text-center text-sm text-gray-500">
+        <div className="border-t border-electric-500/35 pt-8 text-center text-sm text-gray-500">
           <p>2026 Electrical Service Solutions. Semua hak dilindungi.</p>
         </div>
       </div>
@@ -59,4 +59,5 @@ function Footer() {
 }
 
 export default Footer
+
 

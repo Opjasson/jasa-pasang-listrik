@@ -57,7 +57,7 @@ function WhyChooseUs() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-[2rem] border border-electric-500/45 bg-white p-5 sm:p-8 lg:p-10">
           <div className="mb-10 text-center sm:mb-14">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/40 bg-electric-400/10 px-4 py-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-400/15 px-4 py-2">
               <span className="text-sm font-medium text-black">Keunggulan Kami</span>
             </div>
             <h2 className="mb-4 font-display text-3xl font-bold text-dark-900 sm:text-4xl lg:text-5xl">
@@ -99,5 +99,6 @@ function WhyChooseUs() {
 }
 
 export default WhyChooseUs
+
 
 

@@ -18,7 +18,7 @@ function ServiceArea() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
             <span className="text-sm font-medium text-electric-400">Area Layanan</span>
           </div>
           <h2 className="mb-4 font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
@@ -31,8 +31,8 @@ function ServiceArea() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-12">
-          <div className="overflow-hidden rounded-3xl border border-dark-600 bg-dark-800/50 p-3 sm:p-4 lg:col-span-8 lg:h-[460px]">
-            <div className="overflow-hidden rounded-2xl border border-dark-600 lg:h-full">
+          <div className="overflow-hidden rounded-3xl border border-electric-500/35 bg-dark-800/50 p-3 sm:p-4 lg:col-span-8 lg:h-[460px]">
+            <div className="overflow-hidden rounded-2xl border border-electric-500/35 lg:h-full">
               <iframe
                 title="Peta Area Layanan Electrical Service Solutions"
                 src="https://www.google.com/maps?q=Tegal%20Kota%20Tegal%20Timur%20Pemalang%20Slawi%20Brebes%20Bumiayu%20Comal%20Jatibarang%20Balapulang%20Randudongkal&output=embed"
@@ -85,6 +85,7 @@ function ServiceArea() {
 }
 
 export default ServiceArea
+
 
 
 

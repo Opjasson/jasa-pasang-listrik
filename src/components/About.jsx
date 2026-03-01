@@ -7,7 +7,7 @@ function About() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl bg-electric-500/5 blur-2xl"></div>
-            <div className="relative overflow-hidden rounded-3xl border border-dark-600 bg-dark-800">
+            <div className="relative overflow-hidden rounded-3xl border border-electric-500/35 bg-dark-800">
               <div className="relative aspect-video">
                 <img
                   src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80"
@@ -16,12 +16,12 @@ function About() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-800 via-transparent to-transparent"></div>
               </div>
-              <div className="grid grid-cols-3 border-t border-dark-600">
-                <div className="border-r border-dark-600 p-4 text-center sm:p-6">
+              <div className="grid grid-cols-3 border-t border-electric-500/35">
+                <div className="border-r border-electric-500/35 p-4 text-center sm:p-6">
                   <div className="font-display text-xl font-bold text-electric-400 sm:text-2xl">500+</div>
                   <div className="text-sm text-gray-500">Proyek</div>
                 </div>
-                <div className="border-r border-dark-600 p-4 text-center sm:p-6">
+                <div className="border-r border-electric-500/35 p-4 text-center sm:p-6">
                   <div className="font-display text-xl font-bold text-electric-400 sm:text-2xl">50+</div>
                   <div className="text-sm text-gray-500">Tim Ahli</div>
                 </div>
@@ -34,7 +34,7 @@ function About() {
           </div>
 
           <div>
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-electric-500/20 bg-electric-500/10 px-4 py-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border-2 border-electric-500/55 bg-electric-500/15 px-4 py-2">
               <span className="text-sm font-medium text-electric-400">Tentang Kami</span>
             </div>
             <h2 className="mb-6 font-display text-3xl font-bold text-white sm:text-4xl">
@@ -86,4 +86,5 @@ function About() {
 }
 
 export default About
+
 
