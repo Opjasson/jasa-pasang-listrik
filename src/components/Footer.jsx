@@ -7,7 +7,9 @@ function Footer() {
         <div className="mb-8 grid gap-8 md:grid-cols-3">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <img src={logo} alt="Electrical Service Solutions logo" className="h-12 w-12 object-contain" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/95">
+                <img src={logo} alt="Electrical Service Solutions logo" className="h-12 w-12 object-contain" />
+              </div>
               <span className="font-display text-lg font-bold text-white sm:text-xl">
                 Electrical Service Solutions
               </span>
@@ -59,5 +61,3 @@ function Footer() {
 }
 
 export default Footer
-
-
